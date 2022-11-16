@@ -12,7 +12,7 @@ This is a mod which add the Vanilla superflat world.
 
 ## Known issues
 
-- The portal is too far away from the ground of the flat world.
+- Nothing
 
 ## License
 
