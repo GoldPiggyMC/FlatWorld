@@ -1,8 +1,21 @@
-# FlatDimension
+<h1 align="center">Flat World</h1>
 
-Add a flat dimension
+## What is Flat World?
 
-# Go to the flat world
+This is a mod which add the Vanilla superflat world.
+
+## How to visit the flat world?
+
 - Build the Nether portal but use stone instead of obsidian.
-- Use an iron ingot to activate it
-- Enjoy
+- Activate it by using the iron ingot.
+- Enjoy.
+
+## Known issues
+
+- The portal is too far away from the ground of the flat world.
+
+## License
+
+Copyright (c) [TobyDev0207](https://github.com/TobyDev0207). All rights reserved.
+
+Licensed under the [MIT](https://github.com/TobyDev0207/FlatWorld/blob/1.19/LICENSE) license.
