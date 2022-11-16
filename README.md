@@ -1,9 +1,8 @@
-# Fabric Example Mod
+# FlatDimension
 
-## Setup
+Add a flat dimension
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+# Go to the flat world
+- Build the Nether portal but use stone instead of obsidian.
+- Use an iron ingot to activate it
+- Enjoy
