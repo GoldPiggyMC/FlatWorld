@@ -14,8 +14,6 @@ repositories {
     maven {
         url = "https://maven.kyrptonaught.dev"
     }
-
-    maven { url 'https://maven.blamejared.com' }
 }
 
 dependencies {
@@ -25,7 +23,6 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "net.kyrptonaught:customportalapi:${project.custom_portal_api_version}"
-    modImplementation "vazkii.patchouli:Patchouli:${project.patchouli_version}"
 
     include "net.kyrptonaught:customportalapi:${project.custom_portal_api_version}"
 }
