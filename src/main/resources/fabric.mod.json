@@ -1,32 +1,28 @@
 {
-  "schemaVersion": 1,
-  "id": "flatworld",
-  "version": "${version}",
-
-  "name": "Flat World",
-  "description": "Add a flat dimension",
-  "authors": [
-    "TobyDev0207"
-  ],
-  "contact": {
-    "homepage": "https://github.com/TobyDev0207/FlatWorld",
-    "sources": "https://github.com/TobyDev0207/FlatWorld"
-  },
-
-  "license": "MIT",
-  "icon": "assets/flatworld/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "com.tobydev0207.flatworld.FlatWorld"
-    ]
-  },
-
-  "depends": {
-    "fabricloader": ">=0.14.9",
-    "fabric-api": "*",
-    "minecraft": "~1.19",
-    "java": ">=17"
-  }
+    "schemaVersion": 1,
+    "id": "flatworld",
+    "version": "${version}",
+    "name": "Flat World",
+    "description": "Add a flat dimension",
+    "authors": [
+        "TobyDev0207"
+    ],
+    "contact": {
+        "homepage": "https://github.com/TobyDev0207/FlatWorld",
+        "sources": "https://github.com/TobyDev0207/FlatWorld"
+    },
+    "license": "MIT",
+    "icon": "assets/flatworld/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.tobydev0207.flatworld.FlatWorld"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.14.9",
+        "fabric-api": "*",
+        "minecraft": "~1.19",
+        "java": ">=17"
+    }
 }
