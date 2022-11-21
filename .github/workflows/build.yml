@@ -24,6 +24,9 @@ jobs:
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
 
+      - name: Format codes
+        run: ./gradlew :spotlessApply
+
       - name: Build
         run: ./gradlew build
 
