@@ -1,5 +1,6 @@
 package com.tobydev0207.flatworld;
 
+import com.tobydev0207.flatworld.items.HeartOfTheEarth;
 import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
@@ -17,6 +18,7 @@ public class FlatWorld implements ModInitializer {
 
   @Override
   public void onInitialize() {
+      ItemManager.register();
     registerDimension();
     registerPortal();
   }
@@ -28,7 +30,7 @@ public class FlatWorld implements ModInitializer {
   private void registerPortal() {
     CustomPortalBuilder.beginPortal()
         .frameBlock(Blocks.STONE)
-        .lightWithItem(Items.IRON_INGOT)
+        .lightWithItem(HeartOfTheEarth.getItem())
         .destDimID(FLAT_DIMENSION_KEY.getValue())
         .tintColor(149, 165, 166)
         .onlyLightInOverworld()

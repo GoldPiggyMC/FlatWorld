@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "flatworld:item/heart_of_the_earth"
+    }
+}
