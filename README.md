@@ -1,4 +1,4 @@
-# Flat World - [![GitHub](https://img.shields.io/github/license/TobyDev0207/FlatWorld)](https://github.com/TobyDev0207/FlatWorld/blob/main/LICENSE) [![Modrinth Downloads](https://img.shields.io/modrinth/dt/xZIo4pHq)](https://modrinth.com/mod/flat-world) [![Modrinth Version](https://img.shields.io/modrinth/v/xZIo4pHq)](https://modrinth.com/mod/flat-world) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/TobyDev0207/FlatWorld/pulls)
+# Flat World - [![GitHub](https://img.shields.io/github/license/GoldPiggyMC/FlatWorld)](https://github.com/GoldPiggyMC/FlatWorld/blob/main/LICENSE) [![Modrinth Downloads](https://img.shields.io/modrinth/dt/xZIo4pHq)](https://modrinth.com/mod/flat-world) [![Modrinth Version](https://img.shields.io/modrinth/v/xZIo4pHq)](https://modrinth.com/mod/flat-world) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GoldPiggyMC/FlatWorld/pulls)
 
 Flat World is a Fabric mod that adds a super flat dimension to your world.
 
@@ -19,18 +19,18 @@ Flat World is a Fabric mod that adds a super flat dimension to your world.
 
 ## Build from source
 
-1. Clone the repo: `git clone https://github.com/TobyDev0207/FlatWorld.git`
+1. Clone the repo: `git clone https://github.com/GoldPiggyMC/FlatWorld.git`
 2. Build a JAR file: `./gradlew build`
 3. The generated JAR file will be in `build/libs/`
 4. Enjoy!
 
 # Feedback
 
-- [Report an issue](https://github.com/TobyDev0207/FlatWorld/issues)
-- [Request a new feature](https://github.com/TobyDev0207/FlatWorld/pulls)
+- [Report an issue](https://github.com/GoldPiggyMC/FlatWorld/issues)
+- [Request a new feature](https://github.com/GoldPiggyMC/FlatWorld/pulls)
 
 # License
 
-Copyright (c) [TobyDev0207](https://github.com/TobyDev0207). All rights reserved.
+Copyright (c) [TobyDev0207](https://github.com/GoldPiggyMC). All rights reserved.
 
 Licensed under the MIT license.
