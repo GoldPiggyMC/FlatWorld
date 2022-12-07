@@ -31,6 +31,6 @@ Flat World is a Fabric mod that adds a super flat dimension to your world.
 
 # License
 
-Copyright (c) [TobyDev0207](https://github.com/GoldPiggyMC). All rights reserved.
+Copyright (c) [GoldPiggyMC](https://github.com/GoldPiggyMC). All rights reserved.
 
 Licensed under the MIT license.
