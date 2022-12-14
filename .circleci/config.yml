@@ -25,6 +25,8 @@ jobs:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
+      - run: chmod +x ./gradlew
+
       - run:
           name: Format codes
           command: ./gradlew :spotlessApply
