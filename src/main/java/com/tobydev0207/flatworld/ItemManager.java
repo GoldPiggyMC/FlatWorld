@@ -6,7 +6,10 @@ import net.minecraft.util.registry.Registry;
 
 public class ItemManager {
 
-    public static void register() {
-        Registry.register(Registry.ITEM, new Identifier(FlatWorld.MOD_ID, HeartOfTheEarth.getName()), HeartOfTheEarth.getItem());
-    }
+  public static void register() {
+    Registry.register(
+        Registry.ITEM,
+        new Identifier(FlatWorld.MOD_ID, HeartOfTheEarth.getName()),
+        HeartOfTheEarth.getItem());
+  }
 }

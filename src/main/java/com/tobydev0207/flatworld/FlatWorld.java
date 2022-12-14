@@ -4,7 +4,6 @@ import com.tobydev0207.flatworld.items.HeartOfTheEarth;
 import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -18,7 +17,7 @@ public class FlatWorld implements ModInitializer {
 
   @Override
   public void onInitialize() {
-      ItemManager.register();
+    ItemManager.register();
     registerDimension();
     registerPortal();
   }
