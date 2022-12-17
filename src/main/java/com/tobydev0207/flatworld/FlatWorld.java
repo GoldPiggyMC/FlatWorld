@@ -4,27 +4,26 @@ import com.tobydev0207.flatworld.items.HeartOfTheEarth;
 import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.World;
 
 public class FlatWorld implements ModInitializer {
   public static final String MOD_ID = "flatworld";
 
   private static final RegistryKey<World> FLAT_DIMENSION_KEY =
-      RegistryKey.of(Registry.WORLD_KEY, new Identifier(FlatWorld.MOD_ID, "flat_dimension"));
+      RegistryKey.of(RegistryKeys.WORLD, new Identifier(FlatWorld.MOD_ID, "flat_dimension"));
 
   @Override
   public void onInitialize() {
-      ItemManager.register();
+    ItemManager.register();
     registerDimension();
     registerPortal();
   }
 
   private void registerDimension() {
-    RegistryKey.of(Registry.DIMENSION_TYPE_KEY, FLAT_DIMENSION_KEY.getValue());
+    RegistryKey.of(RegistryKeys.DIMENSION_TYPE, FLAT_DIMENSION_KEY.getValue());
   }
 
   private void registerPortal() {
