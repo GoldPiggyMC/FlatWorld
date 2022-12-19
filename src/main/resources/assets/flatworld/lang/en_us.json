@@ -1,3 +1,10 @@
 {
-    "item.flatworld.heart_of_the_earth": "Heart of the Earth"
+    "item.flatworld.heart_of_the_earth": [
+        "Heart of the ",
+        {
+            "text": "Earth",
+            "color": "#2ecc71"
+        }
+    ],
+    "itemGroup.flatworld.flatworld_group": "Flat World"
 }
