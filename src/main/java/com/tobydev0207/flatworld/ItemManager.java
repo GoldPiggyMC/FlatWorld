@@ -1,15 +1,10 @@
 package com.tobydev0207.flatworld;
 
-import com.tobydev0207.flatworld.items.HeartOfTheEarth;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.Item;
 
-public class ItemManager {
-
-  public static void register() {
-    Registry.register(
-        Registry.ITEM,
-        new Identifier(FlatWorld.MOD_ID, HeartOfTheEarth.getName()),
-        HeartOfTheEarth.getItem());
-  }
+public class ItemManager implements ItemRegistryContainer {
+  public static final Item HEART_OF_THE_EARTH =
+      new Item(new FabricItemSettings().group(Vars.FLAT_WORLD_GROUP));
 }

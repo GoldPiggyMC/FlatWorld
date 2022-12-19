@@ -1,6 +1,6 @@
 package com.tobydev0207.flatworld;
 
-import com.tobydev0207.flatworld.items.HeartOfTheEarth;
+import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
@@ -10,16 +10,16 @@ import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.World;
 
 public class FlatWorld implements ModInitializer {
-  public static final String MOD_ID = "flatworld";
 
   private static final RegistryKey<World> FLAT_DIMENSION_KEY =
-      RegistryKey.of(Registry.WORLD_KEY, new Identifier(FlatWorld.MOD_ID, "flat_dimension"));
+      RegistryKey.of(Registry.WORLD_KEY, new Identifier(Vars.MOD_ID, "flat_dimension"));
 
   @Override
   public void onInitialize() {
-    ItemManager.register();
+    FieldRegistrationHandler.register(ItemManager.class, Vars.MOD_ID, false);
     registerDimension();
     registerPortal();
+    Vars.FLAT_WORLD_GROUP.initialize();
   }
 
   private void registerDimension() {
@@ -29,7 +29,7 @@ public class FlatWorld implements ModInitializer {
   private void registerPortal() {
     CustomPortalBuilder.beginPortal()
         .frameBlock(Blocks.STONE)
-        .lightWithItem(HeartOfTheEarth.getItem())
+        .lightWithItem(ItemManager.HEART_OF_THE_EARTH)
         .destDimID(FLAT_DIMENSION_KEY.getValue())
         .tintColor(149, 165, 166)
         .onlyLightInOverworld()
