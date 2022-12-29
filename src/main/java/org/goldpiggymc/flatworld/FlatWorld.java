@@ -1,9 +1,8 @@
-package com.tobydev0207.flatworld;
+package org.goldpiggymc.flatworld;
 
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -16,6 +15,8 @@ public class FlatWorld implements ModInitializer {
   @Override
   public void onInitialize() {
     FieldRegistrationHandler.register(ItemManager.class, Vars.MOD_ID, false);
+    FieldRegistrationHandler.register(BlockManager.class, Vars.MOD_ID, false);
+
     registerDimension();
     registerPortal();
   }
@@ -26,7 +27,7 @@ public class FlatWorld implements ModInitializer {
 
   private void registerPortal() {
     CustomPortalBuilder.beginPortal()
-        .frameBlock(Blocks.STONE)
+        .frameBlock(BlockManager.FLATWORLD_PORTAL)
         .lightWithItem(ItemManager.HEART_OF_THE_EARTH)
         .destDimID(FLAT_DIMENSION_KEY.getValue())
         .tintColor(149, 165, 166)

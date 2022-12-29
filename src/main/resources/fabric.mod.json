@@ -16,7 +16,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.tobydev0207.flatworld.FlatWorld"
+            "org.goldpiggymc.flatworld.FlatWorld"
         ]
     },
     "depends": {

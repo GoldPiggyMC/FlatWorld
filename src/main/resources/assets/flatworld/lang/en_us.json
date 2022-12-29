@@ -6,5 +6,8 @@
             "color": "#2ecc71"
         }
     ],
+
+    "block.flatworld.flatworld_portal": "Flat World Block",
+
     "itemGroup.flatworld.flatworld_group": "Flat World"
 }

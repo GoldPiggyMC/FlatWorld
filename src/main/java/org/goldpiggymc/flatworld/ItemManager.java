@@ -1,4 +1,4 @@
-package com.tobydev0207.flatworld;
+package org.goldpiggymc.flatworld;
 
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;

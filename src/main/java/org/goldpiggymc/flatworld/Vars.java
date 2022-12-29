@@ -1,4 +1,4 @@
-package com.tobydev0207.flatworld;
+package org.goldpiggymc.flatworld;
 
 public class Vars {
   public static final String MOD_ID = "flatworld";
