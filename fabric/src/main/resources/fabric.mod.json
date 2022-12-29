@@ -16,7 +16,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "org.goldpiggymc.flatworld.FlatWorld"
+            "org.goldpiggymc.flatworld.FlatWorldFabric"
         ]
     },
     "depends": {
