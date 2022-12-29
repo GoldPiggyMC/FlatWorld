@@ -12,7 +12,7 @@ import net.minecraft.world.item.ItemStack;
 public class FlatWorld {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Vars.MOD_ID, Registry.ITEM_REGISTRY);
 
-    public static final CreativeModeTab FLATWORLD_TAB = CreativeTabRegistry.create(new ResourceLocation(Vars.MOD_ID, "example_tab"), () ->
+    public static final CreativeModeTab FLATWORLD_TAB = CreativeTabRegistry.create(new ResourceLocation(Vars.MOD_ID, "flatworld_tab"), () ->
         new ItemStack(FlatWorld.HEART_OF_THE_EARTH.get()));
 
     public static final RegistrySupplier<Item> HEART_OF_THE_EARTH = ITEMS.register("heart_of_the_earth", () -> new Item(new Item.Properties().tab(FLATWORLD_TAB)));
