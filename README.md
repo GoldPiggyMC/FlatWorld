@@ -2,7 +2,7 @@
 
 Flat World is a Fabric mod that adds a super flat dimension to your world.
 
-- **Lightweight:** Flat World is an extremely lightweight mods with only 360KB.
+- **Lightweight:** Flat World is an extremely lightweight mods with only 380KB.
 - **Vanilla:** The super flat world is added by Flat World is almost exactly the same as Vanilla.
 
 # Installation
