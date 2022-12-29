@@ -57,14 +57,28 @@ publishing {
 }
 
 spotless {
+    format 'misc', {
+        target '*.gradle', '*.md', '.gitignore'
+
+        trimTrailingWhitespace()
+        indentWithSpaces(4)
+        endWithNewline()
+    }
+
     java {
-        target 'src/*/java/**/*.java'
+        target 'forge/src/*/java/**/*.java', 'fabric/src/*/java/**/*.java', 'quilt/src/*/java/**/*.java'
+
+        googleJavaFormat().aosp()
+        trimTrailingWhitespace()
+        indentWithSpaces(4)
+        endWithNewline()
         removeUnusedImports()
-        googleJavaFormat()
+        formatAnnotations()
     }
 
     json {
-        target 'src/**/*.json'
+        target 'forge/src/**/*.json', 'fabric/src/**/*.json', 'quilt/src/**/*.json'
+
         gson()
                 .indentWithSpaces(4)
     }
