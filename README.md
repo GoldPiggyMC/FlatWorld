@@ -24,6 +24,10 @@ Flat World is a Fabric mod that adds a super flat dimension to your world.
 3. The generated JAR file will be in `build/libs/`
 4. Enjoy!
 
+# Known issues
+
+- Does not exist in creative inventory.
+
 # Feedback
 
 - [Report an issue](https://github.com/GoldPiggyMC/FlatWorld/issues)
