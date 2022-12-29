@@ -1,4 +1,4 @@
-package com.tobydev0207.flatworld;
+package org.goldpiggymc.flatworld;
 
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 import net.minecraft.item.ItemStack;

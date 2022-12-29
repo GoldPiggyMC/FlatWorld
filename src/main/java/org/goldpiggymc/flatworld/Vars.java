@@ -1,4 +1,4 @@
-package com.tobydev0207.flatworld;
+package org.goldpiggymc.flatworld;
 
 import net.minecraft.util.Identifier;
 

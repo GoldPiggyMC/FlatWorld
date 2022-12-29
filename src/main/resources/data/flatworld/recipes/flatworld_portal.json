@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XYX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:stone"
+        },
+        "Y": {
+            "item": "minecraft:obsidian"
+        }
+    },
+    "result": {
+        "item": "flatworld:flatworld_portal",
+        "count": 1
+    }
+}
