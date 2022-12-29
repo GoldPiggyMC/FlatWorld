@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "flatworld",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Flat World",
+  "description": "Adds a super flat dimension to your world.",
   "authors": [
-    "Me!"
+    "GoldPiggyMC"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/GoldPiggyMC/FlatWorld",
+    "sources": "https://github.com/GoldPiggyMC/FlatWorld"
   },
-  "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "license": "MIT",
+  "icon": "assets/flatworld/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "org.goldpiggymc.flatworld.FlatWorld"
     ]
   },
   "depends": {
     "fabric": "*",
-    "minecraft": ">=1.19.2",
+    "minecraft": "1.19.2",
     "architectury": ">=6.2.43"
   }
 }

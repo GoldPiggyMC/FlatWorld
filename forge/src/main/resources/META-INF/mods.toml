@@ -1,33 +1,33 @@
 modLoader = "javafml"
 loaderVersion = "[43,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "MIT"
 
 [[mods]]
-modId = "examplemod"
+modId = "flatworld"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "Flat World"
+authors = "GoldPiggyMC"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Adds a super flat dimension to your world.
 '''
 #logoFile = ""
 
-[[dependencies.examplemod]]
+[[dependencies.flatworld]]
 modId = "forge"
 mandatory = true
 versionRange = "[43,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.flatworld]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19.2,)"
+versionRange = "[1.19.2]"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.flatworld]]
 modId = "architectury"
 mandatory = true
 versionRange = "[6.2.43,)"

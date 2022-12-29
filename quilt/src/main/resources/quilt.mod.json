@@ -2,21 +2,21 @@
   "schema_version": 1,
   "quilt_loader": {
     "group": "${group}",
-    "id": "examplemod",
+    "id": "flatworld",
     "version": "${version}",
-    "name": "Example Mod",
-    "description": "This is an example description! Tell everyone what your mod is about!",
-    "authors": ["Me!"],
+    "name": "Flat World",
+    "description": "Adds a super flat dimension to your world.",
+    "authors": ["GoldPiggyMC"],
     "contact": {
-      "sources": "https://github.com/architectury/architectury-templates"
+      "sources": "https://github.com/GoldPiggyMC/FlatWorld"
     },
-    "license": "Insert License Here",
-    "icon": "assets/examplemod/icon.png",
+    "license": "MIT",
+    "icon": "assets/flatworld/icon.png",
     "intermediate_mappings": "net.fabricmc:intermediary",
     "environment": "*",
     "entrypoints": {
       "init": [
-        "net.examplemod.quilt.ExampleModQuilt"
+        "org.goldpiggymc.flatworld.FlatWorld"
       ]
     },
     "depends": [
@@ -30,7 +30,7 @@
       },
       {
         "id": "minecraft",
-        "version": ">=1.19.2"
+        "version": "1.19.2"
       },
       {
         "id": "architectury",
