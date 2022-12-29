@@ -1,6 +1,7 @@
 plugins {
     id "architectury-plugin" version "3.4-SNAPSHOT"
     id "dev.architectury.loom" version "0.12.0-SNAPSHOT" apply false
+    id "com.diffplug.spotless" version "6.11.0"
 }
 
 architectury {
@@ -47,5 +48,33 @@ allprojects {
 
     java {
         withSourcesJar()
+    }
+}
+
+spotless {
+    format 'misc', {
+        target '*.gradle', '*.md', '.gitignore'
+
+        trimTrailingWhitespace()
+        indentWithSpaces(4)
+        endWithNewline()
+    }
+
+    java {
+        target 'forge/src/*/java/**/*.java', 'fabric/src/*/java/**/*.java', 'quilt/src/*/java/**/*.java'
+
+        googleJavaFormat().aosp()
+        trimTrailingWhitespace()
+        indentWithSpaces(4)
+        endWithNewline()
+        removeUnusedImports()
+        formatAnnotations()
+    }
+
+    json {
+        target 'forge/src/**/*.json', 'fabric/src/**/*.json', 'quilt/src/**/*.json'
+
+        gson()
+                .indentWithSpaces(4)
     }
 }

@@ -6,7 +6,5 @@ import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 public class FlatWorld implements ModInitializer {
 
     @Override
-    public void onInitialize(ModContainer mod) {
-
-    }
+    public void onInitialize(ModContainer mod) {}
 }

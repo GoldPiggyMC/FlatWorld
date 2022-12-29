@@ -1,27 +1,27 @@
 {
-  "schemaVersion": 1,
-  "id": "flatworld",
-  "version": "${version}",
-  "name": "Flat World",
-  "description": "Adds a super flat dimension to your world.",
-  "authors": [
-    "GoldPiggyMC"
-  ],
-  "contact": {
-    "homepage": "https://github.com/GoldPiggyMC/FlatWorld",
-    "sources": "https://github.com/GoldPiggyMC/FlatWorld"
-  },
-  "license": "MIT",
-  "icon": "assets/flatworld/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "org.goldpiggymc.flatworld.FlatWorld"
-    ]
-  },
-  "depends": {
-    "fabric": "*",
-    "minecraft": "1.19.2",
-    "architectury": ">=6.2.43"
-  }
+    "schemaVersion": 1,
+    "id": "flatworld",
+    "version": "${version}",
+    "name": "Flat World",
+    "description": "Adds a super flat dimension to your world.",
+    "authors": [
+        "GoldPiggyMC"
+    ],
+    "contact": {
+        "homepage": "https://github.com/GoldPiggyMC/FlatWorld",
+        "sources": "https://github.com/GoldPiggyMC/FlatWorld"
+    },
+    "license": "MIT",
+    "icon": "assets/flatworld/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "org.goldpiggymc.flatworld.FlatWorld"
+        ]
+    },
+    "depends": {
+        "fabric": "*",
+        "minecraft": "1.19.2",
+        "architectury": ">=6.2.43"
+    }
 }

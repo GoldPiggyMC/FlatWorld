@@ -1,41 +1,43 @@
 {
-  "schema_version": 1,
-  "quilt_loader": {
-    "group": "${group}",
-    "id": "flatworld",
-    "version": "${version}",
-    "name": "Flat World",
-    "description": "Adds a super flat dimension to your world.",
-    "authors": ["GoldPiggyMC"],
-    "contact": {
-      "sources": "https://github.com/GoldPiggyMC/FlatWorld"
-    },
-    "license": "MIT",
-    "icon": "assets/flatworld/icon.png",
-    "intermediate_mappings": "net.fabricmc:intermediary",
-    "environment": "*",
-    "entrypoints": {
-      "init": [
-        "org.goldpiggymc.flatworld.FlatWorld"
-      ]
-    },
-    "depends": [
-      {
-        "id": "quilt_loader",
-        "version": "*"
-      },
-      {
-        "id": "quilt_base",
-        "version": "*"
-      },
-      {
-        "id": "minecraft",
-        "version": "1.19.2"
-      },
-      {
-        "id": "architectury",
-        "version": ">=6.2.43"
-      }
-    ]
-  }
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "flatworld",
+        "version": "${version}",
+        "name": "Flat World",
+        "description": "Adds a super flat dimension to your world.",
+        "authors": [
+            "GoldPiggyMC"
+        ],
+        "contact": {
+            "sources": "https://github.com/GoldPiggyMC/FlatWorld"
+        },
+        "license": "MIT",
+        "icon": "assets/flatworld/icon.png",
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "environment": "*",
+        "entrypoints": {
+            "init": [
+                "org.goldpiggymc.flatworld.FlatWorld"
+            ]
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "version": "*"
+            },
+            {
+                "id": "quilt_base",
+                "version": "*"
+            },
+            {
+                "id": "minecraft",
+                "version": "1.19.2"
+            },
+            {
+                "id": "architectury",
+                "version": ">=6.2.43"
+            }
+        ]
+    }
 }
