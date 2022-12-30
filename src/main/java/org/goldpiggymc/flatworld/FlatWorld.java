@@ -20,11 +20,6 @@ public class FlatWorld implements ModInitializer {
 
     Vars.FLATWORLD_TAB.initialize();
 
-      ItemGroupEvents.modifyEntriesEvent(Vars.FLATWORLD_TAB).register(content -> {
-          content.add(ItemManager.HEART_OF_THE_EARTH);
-          content.add(BlockManager.FLATWORLD_PORTAL);
-      });
-
     registerDimension();
     registerPortal();
   }

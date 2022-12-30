@@ -1,5 +1,6 @@
 package org.goldpiggymc.flatworld;
 
+import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.BlockRegistryContainer;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -13,6 +14,6 @@ public class BlockManager implements BlockRegistryContainer {
 
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
-        return new BlockItem(block, new Item.Settings());
+        return new BlockItem(block, new OwoItemSettings().group(Vars.FLATWORLD_TAB));
     }
 }
