@@ -5,11 +5,11 @@
     "name": "Flat World",
     "description": "Add a flat dimension",
     "authors": [
-        "TobyDev0207"
+        "GoldPiggyMC"
     ],
     "contact": {
-        "homepage": "https://github.com/TobyDev0207/FlatWorld",
-        "sources": "https://github.com/TobyDev0207/FlatWorld"
+        "homepage": "https://github.com/GoldPiggyMC/FlatWorld",
+        "sources": "https://github.com/GoldPiggyMC/FlatWorld"
     },
     "license": "MIT",
     "icon": "assets/flatworld/icon.png",
@@ -22,7 +22,7 @@
     "depends": {
         "fabricloader": ">=0.14.9",
         "fabric-api": "*",
-        "minecraft": "~1.19",
+        "minecraft": "1.19.2",
         "java": ">=17"
     }
 }
