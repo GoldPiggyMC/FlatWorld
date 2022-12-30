@@ -2,6 +2,7 @@ package org.goldpiggymc.flatworld;
 
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -16,6 +17,13 @@ public class FlatWorld implements ModInitializer {
   public void onInitialize() {
     FieldRegistrationHandler.register(ItemManager.class, Vars.MOD_ID, false);
     FieldRegistrationHandler.register(BlockManager.class, Vars.MOD_ID, false);
+
+    Vars.FLATWORLD_TAB.initialize();
+
+      ItemGroupEvents.modifyEntriesEvent(Vars.FLATWORLD_TAB).register(content -> {
+          content.add(ItemManager.HEART_OF_THE_EARTH);
+          content.add(BlockManager.FLATWORLD_PORTAL);
+      });
 
     registerDimension();
     registerPortal();
