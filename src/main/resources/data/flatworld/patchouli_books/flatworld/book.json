@@ -1,0 +1,7 @@
+{
+    "name": "Flat World",
+    "landing_text": "Everything that you, $(playername), need to know about FlatWorld",
+    "version": 1,
+    "show_progress": false,
+    "model": "flatworld:flatworld_book"
+}

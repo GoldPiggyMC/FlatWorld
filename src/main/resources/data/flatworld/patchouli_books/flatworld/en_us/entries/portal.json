@@ -1,0 +1,27 @@
+{
+    "name": "Flat World Portal",
+    "icon": "flatworld:flatworld_portal",
+    "category": "flatworld:building",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "To enter the Flat World dimension, you need to build a portal."
+        }, {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [ "XXXX" ],
+                    [ "X  X" ],
+                    [ "X  X" ],
+                    [ "X  X" ],
+                    [ "0XXX" ]
+                ],
+                "mapping": {
+                    "0": "flatworld:flatworld_portal",
+                    "X": "flatworld:flatworld_portal"
+                },
+                "symmetrical": false
+            }
+        }
+    ]
+}
