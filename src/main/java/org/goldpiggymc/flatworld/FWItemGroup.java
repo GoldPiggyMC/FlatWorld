@@ -4,8 +4,8 @@ import io.wispforest.owo.itemgroup.OwoItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-public class FlatWorldGroup extends OwoItemGroup {
-  protected FlatWorldGroup(Identifier id) {
+public class FWItemGroup extends OwoItemGroup {
+  protected FWItemGroup(Identifier id) {
     super(id);
   }
 

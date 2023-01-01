@@ -21,7 +21,7 @@ public class FlatWorld implements ModInitializer {
     registerDimension();
     registerPortal();
 
-    Vars.FLAT_WORLD_GROUP.initialize();
+    Vars.FW_ITEM_GROUP.initialize();
   }
 
   private void registerDimension() {

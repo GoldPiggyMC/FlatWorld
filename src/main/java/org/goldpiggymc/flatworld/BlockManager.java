@@ -12,6 +12,6 @@ public class BlockManager implements BlockRegistryContainer {
 
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
-        return new BlockItem(block, new Item.Settings().group(Vars.FLAT_WORLD_GROUP));
+        return new BlockItem(block, new Item.Settings().group(Vars.FW_ITEM_GROUP));
     }
 }
