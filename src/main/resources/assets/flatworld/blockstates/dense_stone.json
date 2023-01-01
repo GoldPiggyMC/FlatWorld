@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "flatworld:block/dense_stone" }
+    }
+}

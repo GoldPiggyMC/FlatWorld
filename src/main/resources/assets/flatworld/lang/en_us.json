@@ -7,7 +7,7 @@
         }
     ],
 
-    "block.flatworld.flatworld_portal": "Flat World Block",
+    "block.flatworld.dense_stone": "Dense Stone",
 
     "itemGroup.flatworld.flatworld_group": "Flat World"
 }

@@ -8,7 +8,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
 public class BlockManager implements BlockRegistryContainer {
-    public static final Block FLATWORLD_PORTAL = new Block(FabricBlockSettings.of(Material.METAL));
+    public static final Block DENSE_STONE = new Block(FabricBlockSettings.of(Material.METAL));
 
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
