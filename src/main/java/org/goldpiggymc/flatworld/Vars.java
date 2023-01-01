@@ -7,5 +7,5 @@ import net.minecraft.util.Identifier;
 public class Vars {
   public static final String MOD_ID = "flatworld";
 
-  public static final OwoItemGroup FLATWORLD_TAB = OwoItemGroup.builder(new Identifier(MOD_ID, "flatworld_tab"), () -> Icon.of(ItemManager.HEART_OF_THE_EARTH)).build();
+  public static final OwoItemGroup FW_ITEM_GROUP = OwoItemGroup.builder(new Identifier(MOD_ID, "flatworld_group"), () -> Icon.of(ItemManager.HEART_OF_THE_EARTH)).build();
 }

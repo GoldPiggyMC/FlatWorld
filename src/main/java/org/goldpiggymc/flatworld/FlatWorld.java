@@ -18,7 +18,7 @@ public class FlatWorld implements ModInitializer {
     FieldRegistrationHandler.register(ItemManager.class, Vars.MOD_ID, false);
     FieldRegistrationHandler.register(BlockManager.class, Vars.MOD_ID, false);
 
-    Vars.FLATWORLD_TAB.initialize();
+    Vars.FW_ITEM_GROUP.initialize();
 
     registerDimension();
     registerPortal();
@@ -30,7 +30,7 @@ public class FlatWorld implements ModInitializer {
 
   private void registerPortal() {
     CustomPortalBuilder.beginPortal()
-        .frameBlock(BlockManager.FLATWORLD_PORTAL)
+        .frameBlock(BlockManager.DENSE_STONE)
         .lightWithItem(ItemManager.HEART_OF_THE_EARTH)
         .destDimID(FLAT_DIMENSION_KEY.getValue())
         .tintColor(149, 165, 166)
