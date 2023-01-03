@@ -6,7 +6,8 @@
         {
             "type": "patchouli:text",
             "text": "An necessary item to activate the Flat World portal. It is reusable so you only need to craft it once."
-        }, {
+        },
+        {
             "type": "patchouli:crafting",
             "recipe": "flatworld:heart_of_the_earth"
         }

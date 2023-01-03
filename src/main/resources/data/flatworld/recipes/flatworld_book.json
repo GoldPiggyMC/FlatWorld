@@ -1,8 +1,6 @@
 {
     "type": "patchouli:shaped_book_recipe",
-    "pattern": [
-        "XY"
-    ],
+    "pattern": ["XY"],
     "key": {
         "X": {
             "item": "minecraft:book"

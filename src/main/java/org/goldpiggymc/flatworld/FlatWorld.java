@@ -10,31 +10,45 @@ import net.minecraft.world.World;
 
 public class FlatWorld implements ModInitializer {
 
-  private static final RegistryKey<World> FLAT_DIMENSION_KEY =
-      RegistryKey.of(Registry.WORLD_KEY, new Identifier(Vars.MOD_ID, "flat_dimension"));
+    private static final RegistryKey<World> FLAT_DIMENSION_KEY = RegistryKey.of(
+        Registry.WORLD_KEY,
+        new Identifier(Vars.MOD_ID, "flat_dimension")
+    );
 
-  @Override
-  public void onInitialize() {
-    FieldRegistrationHandler.register(ItemManager.class, Vars.MOD_ID, false);
-    FieldRegistrationHandler.register(BlockManager.class, Vars.MOD_ID, false);
+    @Override
+    public void onInitialize() {
+        FieldRegistrationHandler.register(
+            ItemManager.class,
+            Vars.MOD_ID,
+            false
+        );
+        FieldRegistrationHandler.register(
+            BlockManager.class,
+            Vars.MOD_ID,
+            false
+        );
 
-    registerDimension();
-    registerPortal();
+        registerDimension();
+        registerPortal();
 
-    Vars.FW_ITEM_GROUP.initialize();
-  }
+        Vars.FW_ITEM_GROUP.initialize();
+    }
 
-  private void registerDimension() {
-    RegistryKey.of(Registry.DIMENSION_TYPE_KEY, FLAT_DIMENSION_KEY.getValue());
-  }
+    private void registerDimension() {
+        RegistryKey.of(
+            Registry.DIMENSION_TYPE_KEY,
+            FLAT_DIMENSION_KEY.getValue()
+        );
+    }
 
-  private void registerPortal() {
-    CustomPortalBuilder.beginPortal()
-        .frameBlock(BlockManager.DENSE_STONE)
-        .lightWithItem(ItemManager.HEART_OF_THE_EARTH)
-        .destDimID(FLAT_DIMENSION_KEY.getValue())
-        .tintColor(149, 165, 166)
-        .onlyLightInOverworld()
-        .registerPortal();
-  }
+    private void registerPortal() {
+        CustomPortalBuilder
+            .beginPortal()
+            .frameBlock(BlockManager.DENSE_STONE)
+            .lightWithItem(ItemManager.HEART_OF_THE_EARTH)
+            .destDimID(FLAT_DIMENSION_KEY.getValue())
+            .tintColor(149, 165, 166)
+            .onlyLightInOverworld()
+            .registerPortal();
+    }
 }
