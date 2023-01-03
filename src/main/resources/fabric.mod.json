@@ -4,9 +4,7 @@
     "version": "${version}",
     "name": "Flat World",
     "description": "Add a flat dimension",
-    "authors": [
-        "GoldPiggyMC"
-    ],
+    "authors": ["GoldPiggyMC"],
     "contact": {
         "homepage": "https://github.com/GoldPiggyMC/FlatWorld",
         "sources": "https://github.com/GoldPiggyMC/FlatWorld"
@@ -15,9 +13,7 @@
     "icon": "assets/flatworld/icon.png",
     "environment": "*",
     "entrypoints": {
-        "main": [
-            "org.goldpiggymc.flatworld.FlatWorld"
-        ]
+        "main": ["org.goldpiggymc.flatworld.FlatWorld"]
     },
     "depends": {
         "fabricloader": ">=0.14.9",

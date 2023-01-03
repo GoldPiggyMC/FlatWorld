@@ -10,31 +10,46 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 public class FlatWorld implements ModInitializer {
-  private static final RegistryKey<World> FLAT_DIMENSION_KEY =
-      RegistryKey.of(RegistryKeys.WORLD, new Identifier(Vars.MOD_ID, "flat_dimension"));
 
-  @Override
-  public void onInitialize() {
-    FieldRegistrationHandler.register(ItemManager.class, Vars.MOD_ID, false);
-    FieldRegistrationHandler.register(BlockManager.class, Vars.MOD_ID, false);
+    private static final RegistryKey<World> FLAT_DIMENSION_KEY = RegistryKey.of(
+        RegistryKeys.WORLD,
+        new Identifier(Vars.MOD_ID, "flat_dimension")
+    );
 
-    Vars.FW_ITEM_GROUP.initialize();
+    @Override
+    public void onInitialize() {
+        FieldRegistrationHandler.register(
+            ItemManager.class,
+            Vars.MOD_ID,
+            false
+        );
+        FieldRegistrationHandler.register(
+            BlockManager.class,
+            Vars.MOD_ID,
+            false
+        );
 
-    registerDimension();
-    registerPortal();
-  }
+        Vars.FW_ITEM_GROUP.initialize();
 
-  private void registerDimension() {
-    RegistryKey.of(RegistryKeys.DIMENSION_TYPE, FLAT_DIMENSION_KEY.getValue());
-  }
+        registerDimension();
+        registerPortal();
+    }
 
-  private void registerPortal() {
-    CustomPortalBuilder.beginPortal()
-        .frameBlock(BlockManager.DENSE_STONE)
-        .lightWithItem(ItemManager.HEART_OF_THE_EARTH)
-        .destDimID(FLAT_DIMENSION_KEY.getValue())
-        .tintColor(149, 165, 166)
-        .onlyLightInOverworld()
-        .registerPortal();
-  }
+    private void registerDimension() {
+        RegistryKey.of(
+            RegistryKeys.DIMENSION_TYPE,
+            FLAT_DIMENSION_KEY.getValue()
+        );
+    }
+
+    private void registerPortal() {
+        CustomPortalBuilder
+            .beginPortal()
+            .frameBlock(BlockManager.DENSE_STONE)
+            .lightWithItem(ItemManager.HEART_OF_THE_EARTH)
+            .destDimID(FLAT_DIMENSION_KEY.getValue())
+            .tintColor(149, 165, 166)
+            .onlyLightInOverworld()
+            .registerPortal();
+    }
 }

@@ -11,11 +11,7 @@
             "item": "minecraft:grass_block"
         }
     },
-    "pattern": [
-        "AGA",
-        "GNG",
-        "AGA"
-    ],
+    "pattern": ["AGA", "GNG", "AGA"],
     "result": {
         "item": "flatworld:heart_of_the_earth"
     }
